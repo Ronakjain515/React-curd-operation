@@ -34,7 +34,8 @@ class Users extends Component {
                         {
                             this.state.user_data.map((user, index) => 
                                 <User 
-                                    user={user} 
+                                    user={user}
+                                    key={user.id}
                                     deleteItem={this.deleteItem} />)
                         }
                     </ListGroup>
